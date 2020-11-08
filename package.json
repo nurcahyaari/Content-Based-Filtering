@@ -1,0 +1,54 @@
+{
+  "name": "cbf",
+  "version": "1.0.0",
+  "description": "this module is using for calculating the cosine similarity and vector space model using tfidf",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node ",
+    "build": "tsc && cp -R lib/db build/lib",
+    "test": "mocha -r ts-node/register tests/*.ts",
+    "format": "prettier --write \"lib/**/*.ts\" ",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A lib",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "tfidf",
+    "recommender",
+    "system",
+    "cosine",
+    "similarity"
+  ],
+  "author": "nurcahyaari",
+  "license": "MIT",
+  "dependencies": {
+    "@types/natural": "^0.6.3",
+    "@types/underscore": "^1.9.4",
+    "install": "^0.13.0",
+    "lemmatizer": "0.0.1",
+    "natural": "^0.6.3",
+    "sastrawijs": "^1.0.3",
+    "tslib": "^1.11.1",
+    "underscore": "^1.10.2",
+    "vector-object": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "prettier": "^2.0.4",
+    "ts-node": "^8.7.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "build/**/*"
+  ]
+}
