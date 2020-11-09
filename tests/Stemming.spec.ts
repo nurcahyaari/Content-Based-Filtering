@@ -3,7 +3,7 @@
 import {expect} from "chai";
 import 'mocha';
 
-import {Stemming} from '../lib/Stemming';
+import Stemming from '../lib/Stemming';
 
 describe("Languange Stemming", () => {
     it("Should stem indonesian words", () => {

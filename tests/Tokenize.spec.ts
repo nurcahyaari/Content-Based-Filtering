@@ -2,7 +2,7 @@
 import {expect} from 'chai';
 import 'mocha';
 
-import {Tokenize} from '../lib/Tokenize';
+import Tokenize from '../lib/Tokenize';
 
 describe('Tokenizers Testing', () => {
     it('Will it tokenize this text', () => {

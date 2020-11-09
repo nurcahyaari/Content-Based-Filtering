@@ -1,8 +1,8 @@
 import {expect} from 'chai';
 import 'mocha'
 
-import {Stopword} from '../lib/Stopword';
-import {Tokenize} from '../lib/Tokenize';
+import Stopword from '../lib/Stopword';
+import Tokenize from '../lib/Tokenize';
 
 describe("Stopword removal", () => { 
     it("Should remove stopword or slankword", () =>  { 
