@@ -88,3 +88,33 @@ const token = text.map((t: string) => Stemming(t));
  * /
 ```
 <br>
+
+### Preprocessing
+Preprocessing is a function for preprocessing a text, preprocessing function will do tokenize, stopword removal, and stemming. 
+
+```js
+
+/**
+ * 
+ */
+
+```
+
+### TF-IDF
+TF-IDF is a function that will calculate the weight of the term. you can use the full of text without any preprocessing, or you can use the array of string. the string is a return from the preprocessing function
+
+```js
+
+/**
+ * 
+ */
+
+```
+
+
+### Word Vector
+Word Vector is a function for create vector object
+
+
+### Cosine Similarity
+Cosine similarity function is a function for calculate the distance between two vector object. before you used this function you must create vector object using Word Vector function
