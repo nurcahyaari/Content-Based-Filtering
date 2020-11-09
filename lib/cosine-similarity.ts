@@ -1,6 +1,8 @@
+import { DocumentsPreprocessedModel } from './models/documents-preprocessed';
 import { WordVectorModel } from './models/word-vector';
+import { CosineSimilarityModel } from './models/cosine-similarity';
 
-const CosineSimilarity = (WordVector: WordVectorModel[], minScore: number) => {
+const CosineSimilarity = (WordVector: WordVectorModel[], minScore: number = 0): CosineSimilarityModel => {
     const document: any = {};
     
     for (const i in WordVector) {
