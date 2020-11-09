@@ -1,5 +1,5 @@
 {
-  "name": "cbf",
+  "name": "content-based-filtering",
   "version": "1.0.0",
   "description": "this module is using for calculating the cosine similarity and vector space model using tfidf",
   "main": "build/index.js",
