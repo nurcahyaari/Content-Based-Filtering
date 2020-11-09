@@ -5,7 +5,7 @@ import CosineSimilarity from './lib/cosine-similarity';
 import TfIdf from './lib/tf-idf';
 import WordVector from './lib/word-vector';
 
-import { CosineSimilarityModel } from './lib/models/cosine-similarity';
+import { CosineSimilarityModel, CosineSimilarityValueModel } from './lib/models/cosine-similarity';
 import { DocumentsModel } from './lib/models/documents';
 import { DocumentsPreprocessedModel } from './lib/models/documents-preprocessed';
 import { TfIdfModel } from './lib/models/tf-idf';
@@ -18,6 +18,7 @@ export {
     CosineSimilarity,
     TfIdf,
     WordVector,
+    CosineSimilarityValueModel,
     CosineSimilarityModel,
     DocumentsModel,
     DocumentsPreprocessedModel,

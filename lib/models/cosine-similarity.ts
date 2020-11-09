@@ -1,7 +1,9 @@
+export interface CosineSimilarityValueModel {
+    id: number | string;
+    score: number;
+    data?: any;
+}
+
 export interface CosineSimilarityModel {
-    [key: string]: [
-        id: number | string,
-        score: number,
-        data: any,
-    ];
+    [key: string]: CosineSimilarityValueModel[];
 }

@@ -1,6 +1,6 @@
-import { CosineSimilarityModel } from './models/cosine-similarity';
+import { CosineSimilarityModel, CosineSimilarityValueModel } from './models/cosine-similarity';
 
-const Recommendation = (id: number | string, similarity: CosineSimilarityModel) => {
+const Recommendation = (id: number | string, similarity: CosineSimilarityModel): CosineSimilarityValueModel[] => {
     let similarDocuments = similarity[id];
     
     return similarDocuments;
